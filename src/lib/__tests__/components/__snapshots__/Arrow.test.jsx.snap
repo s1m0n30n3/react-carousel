@@ -1,0 +1,43 @@
+// Vitest Snapshot v1
+
+exports[`Arrow > renders correctly by passing \`arrowIcon\` required prop 1`] = `
+<button>
+  <svg
+    height="1em"
+    viewBox="0 0 24 24"
+    width="1em"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <polygon
+      points="7.293 4.707 14.586 12 7.293 19.293 8.707 20.707 17.414 12 8.707 3.293 7.293 4.707"
+    />
+  </svg>
+</button>
+`;
+
+exports[`Arrow > renders correctly by passing \`arrowIcon\` required prop and other props 1`] = `
+<button
+  style={
+    {
+      "background": "#ffffff",
+      "borderRadius": "16px",
+      "fontSize": "24px",
+      "height": "32px",
+      "transform": "rotate(180deg)",
+      "width": "32px",
+    }
+  }
+>
+  <svg
+    fill="#000000"
+    height="1em"
+    viewBox="0 0 24 24"
+    width="1em"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <polygon
+      points="7.293 4.707 14.586 12 7.293 19.293 8.707 20.707 17.414 12 8.707 3.293 7.293 4.707"
+    />
+  </svg>
+</button>
+`;

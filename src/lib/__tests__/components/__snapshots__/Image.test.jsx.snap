@@ -1,0 +1,87 @@
+// Vitest Snapshot v1
+
+exports[`Image > renders correctly if \`imageBehaviour\` is \`full\` and \`effect\` is \`inOutSlide\` 1`] = `
+<div
+  role="listitem"
+>
+  <figure
+    className="image-selected"
+    data-cy="image-slide-1"
+    style={
+      {
+        "transform": "scale(1)",
+        "transitionDuration": "300ms",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Image > renders correctly if \`imageBlur.blur\` is \`true\` and images are set 1`] = `
+<div
+  role="listitem"
+>
+  <div
+    style={
+      {
+        "backgroundImage": "initial",
+        "filter": "blur(undefinedpx)",
+        "height": "calc(100% + NaNpx)",
+        "left": "-undefinedpx",
+        "top": "-undefinedpx",
+        "width": "calc(100% + NaNpx)",
+        "zIndex": 0,
+      }
+    }
+  />
+  <figure
+    className="image-selected"
+    data-cy="image-slide-undefined"
+    style={{}}
+  />
+</div>
+`;
+
+exports[`Image > renders correctly if \`imageBlur.blur\` is \`true\` and images are set along with other props 1`] = `
+<div
+  role="listitem"
+>
+  <div
+    style={
+      {
+        "backgroundImage": "url(b.png)",
+        "filter": "blur(20px)",
+        "height": "calc(100% + 40px)",
+        "left": "-20px",
+        "opacity": 1,
+        "top": "-20px",
+        "transitionDuration": "300ms",
+        "width": "calc(100% + 40px)",
+        "zIndex": 0,
+      }
+    }
+  />
+  <figure
+    className="image-selected"
+    data-cy="image-slide-1"
+    style={
+      {
+        "opacity": 1,
+        "transitionDuration": "300ms",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Image > renders correctly without other props, if \`imageBlur.blur\` is \`false\` 1`] = `
+<div
+  role="listitem"
+>
+  <figure
+    className="image-selected"
+    data-cy="image-slide-undefined"
+    style={{}}
+  />
+</div>
+`;

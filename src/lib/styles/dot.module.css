@@ -1,0 +1,14 @@
+.base {
+    appearance: none;
+    border: none;
+    background-color: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0.3;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+.selected {
+    opacity: 1;
+}

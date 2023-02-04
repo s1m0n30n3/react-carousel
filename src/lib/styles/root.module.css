@@ -1,0 +1,6 @@
+.base {
+    width: 100%;
+    height: 500px;
+    background-color: #efefef;
+    transform: translate3d(0,0,0);
+}

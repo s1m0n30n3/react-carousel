@@ -1,0 +1,7 @@
+// Vitest Snapshot v1
+
+exports[`Root > component renders correctly without props 1`] = `
+<div
+  role="region"
+/>
+`;

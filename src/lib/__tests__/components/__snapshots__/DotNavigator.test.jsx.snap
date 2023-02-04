@@ -1,0 +1,147 @@
+// Vitest Snapshot v1
+
+exports[`DotNavigator > render correctly and have the function \`onClick\` attached to \`Dot\` component 1`] = `[Function]`;
+
+exports[`DotNavigator > render correctly when \`dotsNavigation.areDotsSet\` prop is \`true\` 1`] = `
+<div>
+  <button
+    className=""
+    data-cy="dot-navigator-0"
+    onClick={[Function]}
+  />
+</div>
+`;
+
+exports[`DotNavigator > render correctly when \`dotsNavigation.areDotsSet\` prop is \`true\` and other props are defined 1`] = `
+<div
+  onClick={[Function]}
+  style={
+    {
+      "bottom": "18px",
+    }
+  }
+>
+  <button
+    className=""
+    data-cy="dot-navigator-0"
+    onClick={[Function]}
+    style={
+      {
+        "backgroundColor": "#efefef",
+        "borderRadius": "6px",
+        "height": "12px",
+        "marginLeft": "2px",
+        "marginRight": "2px",
+        "width": "12px",
+      }
+    }
+  />
+  <button
+    className=""
+    data-cy="dot-navigator-1"
+    onClick={[Function]}
+    style={
+      {
+        "backgroundColor": "#efefef",
+        "borderRadius": "6px",
+        "height": "12px",
+        "marginLeft": "2px",
+        "marginRight": "2px",
+        "width": "12px",
+      }
+    }
+  />
+  <button
+    className=""
+    data-cy="dot-navigator-2"
+    onClick={[Function]}
+    style={
+      {
+        "backgroundColor": "#efefef",
+        "borderRadius": "6px",
+        "height": "12px",
+        "marginLeft": "2px",
+        "marginRight": "2px",
+        "width": "12px",
+      }
+    }
+  />
+  <button
+    className=""
+    data-cy="dot-navigator-3"
+    onClick={[Function]}
+    style={
+      {
+        "backgroundColor": "#efefef",
+        "borderRadius": "6px",
+        "height": "12px",
+        "marginLeft": "2px",
+        "marginRight": "2px",
+        "width": "12px",
+      }
+    }
+  />
+  <button
+    className=""
+    data-cy="dot-navigator-4"
+    onClick={[Function]}
+    style={
+      {
+        "backgroundColor": "#efefef",
+        "borderRadius": "6px",
+        "height": "12px",
+        "marginLeft": "2px",
+        "marginRight": "2px",
+        "width": "12px",
+      }
+    }
+  />
+  <button
+    className=""
+    data-cy="dot-navigator-5"
+    onClick={[Function]}
+    style={
+      {
+        "backgroundColor": "#efefef",
+        "borderRadius": "6px",
+        "height": "12px",
+        "marginLeft": "2px",
+        "marginRight": "2px",
+        "width": "12px",
+      }
+    }
+  />
+  <button
+    className=""
+    data-cy="dot-navigator-6"
+    onClick={[Function]}
+    style={
+      {
+        "backgroundColor": "#efefef",
+        "borderRadius": "6px",
+        "height": "12px",
+        "marginLeft": "2px",
+        "marginRight": "2px",
+        "width": "12px",
+      }
+    }
+  />
+  <button
+    className=""
+    data-cy="dot-navigator-7"
+    onClick={[Function]}
+    style={
+      {
+        "backgroundColor": "#efefef",
+        "borderRadius": "6px",
+        "height": "12px",
+        "marginLeft": "2px",
+        "marginRight": "2px",
+        "width": "12px",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`DotNavigator > return \`null\` when \`dotsNavigation.areDotsSet\` prop is \`false\` 1`] = `null`;

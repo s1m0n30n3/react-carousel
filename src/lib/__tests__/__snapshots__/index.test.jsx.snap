@@ -1,0 +1,152 @@
+// Vitest Snapshot v1
+
+exports[`Gallery > renders correctly and call \`onMouseDown\` in the \`GalleryWrapper\` 1`] = `[Function]`;
+
+exports[`Gallery > renders correctly and call \`onMouseUp\` in the \`GalleryWrapper\` 1`] = `[Function]`;
+
+exports[`Gallery > renders correctly and call \`onTouchEnd\` in the \`GalleryWrapper\` 1`] = `[Function]`;
+
+exports[`Gallery > renders correctly and call \`onTouchStart\` in the \`GalleryWrapper\` 1`] = `[Function]`;
+
+exports[`Gallery > renders correctly by passing \`navigationType='none'\` 1`] = `
+<div
+  role="region"
+  style={
+    {
+      "height": 800,
+    }
+  }
+>
+  <div>
+    <div>
+      <div
+        className=""
+        onMouseDown={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchStart={[Function]}
+        role="listbox"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Gallery > renders correctly by passing \`navigationType='onlyArrows'\` 1`] = `
+<div
+  role="region"
+  style={
+    {
+      "height": 800,
+    }
+  }
+>
+  <div>
+    <div>
+      <div
+        className=""
+        onMouseDown={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchStart={[Function]}
+        role="listbox"
+      />
+    </div>
+    <div
+      role="group"
+      style={
+        {
+          "top": "28px",
+          "width": "calc(100% - 32px)",
+        }
+      }
+    >
+      <button
+        data-cy="arrow-left"
+        disabled={false}
+        onClick={[Function]}
+        style={
+          {
+            "background": "#000000",
+            "borderRadius": "16px",
+            "fontSize": "24px",
+            "height": "32px",
+            "transform": "rotate(180deg)",
+            "width": "32px",
+          }
+        }
+      >
+        <svg
+          fill="#ffffff"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polygon
+            points="7.293 4.707 14.586 12 7.293 19.293 8.707 20.707 17.414 12 8.707 3.293 7.293 4.707"
+          />
+        </svg>
+      </button>
+      <button
+        data-cy="arrow-right"
+        disabled={false}
+        onClick={[Function]}
+        style={
+          {
+            "background": "#000000",
+            "borderRadius": "16px",
+            "fontSize": "24px",
+            "height": "32px",
+            "transform": "rotate(0deg)",
+            "width": "32px",
+          }
+        }
+      >
+        <svg
+          fill="#ffffff"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polygon
+            points="7.293 4.707 14.586 12 7.293 19.293 8.707 20.707 17.414 12 8.707 3.293 7.293 4.707"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Gallery > renders correctly by passing \`navigationType='onlyArrows'\` 2`] = `
+<div
+  role="region"
+  style={
+    {
+      "height": 800,
+    }
+  }
+>
+  <div>
+    <div>
+      <div
+        className=""
+        onMouseDown={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchStart={[Function]}
+        role="listbox"
+      />
+    </div>
+    <div
+      style={
+        {
+          "bottom": "18px",
+        }
+      }
+    />
+  </div>
+</div>
+`;

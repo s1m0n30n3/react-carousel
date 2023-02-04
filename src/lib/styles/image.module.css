@@ -1,0 +1,57 @@
+.base {
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: translate3d(0,0,0);
+}
+.base img {
+    user-select: none;
+    object-fit: contain;
+}
+
+.wrapperFade {
+    width: max-content;
+    overflow: hidden;
+}
+.wrapperSlide {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Effects */
+.fade {
+    transition-timing-function: ease-in-out;
+    transition-property: opacity;
+    position: absolute;
+}
+
+.inOutSlide {
+    transition-timing-function: ease-in-out;
+    transition-property: transform;
+}
+
+/* Image Formats */
+.full,
+.contained {
+    width: 100%;
+    height: 100%;
+}
+
+.full img,
+.contained img {
+    width: inherit;
+    height: inherit;
+}
+
+.full img {
+    object-fit: cover;
+}
+
+.contained img {
+    object-fit: contain;
+}

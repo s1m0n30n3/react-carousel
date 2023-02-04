@@ -1,0 +1,29 @@
+// Vitest Snapshot v1
+
+exports[`GalleryWrapper > renders correctly if \`effect\` is \`slide\` 1`] = `
+<div
+  className=""
+  role="listbox"
+  style={
+    {
+      "transform": "translateX(-10%)",
+      "transitionDuration": "300ms",
+      "width": "1000%",
+    }
+  }
+/>
+`;
+
+exports[`GalleryWrapper > renders correctly with props 1`] = `
+<div
+  className=""
+  role="listbox"
+/>
+`;
+
+exports[`GalleryWrapper > renders correctly without props 1`] = `
+<div
+  className=""
+  role="listbox"
+/>
+`;

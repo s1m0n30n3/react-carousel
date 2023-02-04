@@ -1,0 +1,23 @@
+// Vitest Snapshot v1
+
+exports[`Dot > renders all props 1`] = `
+<button
+  className=""
+  style={
+    {
+      "backgroundColor": "#ffffff",
+      "borderRadius": "6px",
+      "height": "12px",
+      "marginLeft": "3px",
+      "marginRight": "3px",
+      "width": "12px",
+    }
+  }
+/>
+`;
+
+exports[`Dot > renders correctly without props 1`] = `
+<button
+  className=""
+/>
+`;

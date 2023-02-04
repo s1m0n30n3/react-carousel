@@ -1,0 +1,14 @@
+.base {
+    height: inherit;
+    transition-timing-function: ease-in-out;
+    display: flex;
+}
+
+.slide {
+    transition-property: transform;
+}
+.fade {
+    width: 100%;
+    transition-property: opacity;
+    position: relative;
+}
