@@ -13,11 +13,11 @@ import { Navigator } from "components/navigator";
 import { ReactComponent as ArrowIcon } from "assets/icons/chevron-right.svg";
 
 describe("Navigator", () => {
-  test("does not render if `navigationArrows.areArrowSet` is equal to `false`", () => {
+  test("does not render if `arrows.areSet` is equal to `false`", () => {
     const component = renderer.create(
       <Navigator
-        navigationArrows={{
-          areArrowsSet: false,
+        arrows={{
+          areSet: false,
         }}
       />
     );
@@ -26,12 +26,12 @@ describe("Navigator", () => {
     expect(tree).toMatchSnapshot();
   });
 
-  test("render if `navigationArrows.areArrowSet` is equal to `true` and `navigationArrows.arrowIcon` is defined", () => {
+  test("render if `arrows.areSet` is equal to `true` and `arrows.icon` is defined", () => {
     const component = renderer.create(
       <Navigator
-        navigationArrows={{
-          areArrowsSet: true,
-          arrowIcon: ArrowIcon,
+        arrows={{
+          areSet: true,
+          icon: ArrowIcon,
         }}
       />
     );
@@ -40,25 +40,27 @@ describe("Navigator", () => {
     expect(tree).toMatchSnapshot();
   });
 
-  test("render if `navigationArrows.areArrowSet` is equal to `true`, `navigationArrows.arrowIcon` and all other props are defined", () => {
+  test("render if `arrows.areSet` is equal to `true`, `arrows.icon` and all other props are defined", () => {
     const component = renderer.create(
       <Navigator
-        navigationType={NavigationType.ARROWS_AND_DOTS}
-        navigationPosition={NavigationPosition.CENTER}
-        navigationWidth="100%"
-        navigationSideMargin={14}
+        navigation={{
+          type: NavigationType.ARROWS_AND_DOTS,
+          position: NavigationPosition.CENTER,
+          width: "100%",
+          sideMargin: 14,
+        }}
         onNavigate={() => vi.fn(() => vi.mock({ action: CarouselAction.PREV }))}
         imagesLength={5}
         currentIndex={4}
         galleryMode={GalleryMode.RETURN}
-        navigationArrows={{
-          areArrowsSet: true,
-          arrowSize: 12,
-          arrowIcon: ArrowIcon,
-          arrowIconSize: 24,
-          arrowColor: "#ffffff",
-          arrowBackground: "#000000",
-          arrowRounding: 16,
+        arrows={{
+          areSet: true,
+          size: 12,
+          radius: 16,
+          color: "#ffffff",
+          background: "#000000",
+          icon: ArrowIcon,
+          iconSize: 24,
         }}
       />
     );
@@ -73,10 +75,10 @@ describe("Navigator", () => {
         imagesLength={5}
         currentIndex={4}
         galleryMode={GalleryMode.BOUNDED}
-        navigationArrows={{
-          areArrowsSet: true,
-          arrowSize: 12,
-          arrowIcon: ArrowIcon,
+        arrows={{
+          areSet: true,
+          size: 12,
+          icon: ArrowIcon,
         }}
       />
     );
@@ -95,10 +97,10 @@ describe("Navigator", () => {
         imagesLength={5}
         currentIndex={0}
         galleryMode={GalleryMode.BOUNDED}
-        navigationArrows={{
-          areArrowsSet: true,
-          arrowSize: 12,
-          arrowIcon: ArrowIcon,
+        arrows={{
+          areSet: true,
+          size: 12,
+          icon: ArrowIcon,
         }}
       />
     );
@@ -117,10 +119,10 @@ describe("Navigator", () => {
         imagesLength={5}
         currentIndex={0}
         galleryMode={GalleryMode.BOUNDED}
-        navigationArrows={{
-          areArrowsSet: true,
-          arrowSize: 12,
-          arrowIcon: ArrowIcon,
+        arrows={{
+          areSet: true,
+          size: 12,
+          icon: ArrowIcon,
         }}
         onNavigate={vi.fn()}
       />
@@ -143,10 +145,10 @@ describe("Navigator", () => {
         imagesLength={5}
         currentIndex={0}
         galleryMode={GalleryMode.BOUNDED}
-        navigationArrows={{
-          areArrowsSet: true,
-          arrowSize: 12,
-          arrowIcon: ArrowIcon,
+        arrows={{
+          areSet: true,
+          size: 12,
+          icon: ArrowIcon,
         }}
         onNavigate={vi.fn()}
       />

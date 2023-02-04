@@ -4,12 +4,21 @@ import { describe, expect, test, vi } from "vitest";
 
 import { DotNavigator } from "components/dot-navigator";
 
+const dotConfig = {
+  areSet: true,
+  position: "bottom",
+  size: 12,
+  color: "#efefef",
+  radius: 6,
+  spacing: 2,
+};
+
 describe("DotNavigator", () => {
   test("return `null` when `dotsNavigation.areDotsSet` prop is `false`", () => {
     const component = renderer.create(
       <DotNavigator
-        dotsNavigation={{
-          areDotsSet: false,
+        dots={{
+          areSet: false,
         }}
       />
     );
@@ -20,8 +29,8 @@ describe("DotNavigator", () => {
   test("render correctly when `dotsNavigation.areDotsSet` prop is `true`", () => {
     const component = renderer.create(
       <DotNavigator
-        dotsNavigation={{
-          areDotsSet: true,
+        dots={{
+          areSet: true,
         }}
       />
     );
@@ -34,14 +43,7 @@ describe("DotNavigator", () => {
       <DotNavigator
         imagesLength={8}
         onClick={() => vi.fn()}
-        dotsNavigation={{
-          areDotsSet: true,
-          position: "bottom",
-          dotSize: 12,
-          dotColor: "#efefef",
-          dotRadius: 6,
-          dotSpacing: 2,
-        }}
+        dots={dotConfig}
         currentIndex={1}
       />
     );
@@ -55,14 +57,7 @@ describe("DotNavigator", () => {
       <DotNavigator
         imagesLength={8}
         onClick={() => vi.fn()}
-        dotsNavigation={{
-          areDotsSet: true,
-          position: "bottom",
-          dotSize: 12,
-          dotColor: "#efefef",
-          dotRadius: 6,
-          dotSpacing: 2,
-        }}
+        dots={dotConfig}
         currentIndex={1}
         setGalleryIndex={vi.fn()}
       />

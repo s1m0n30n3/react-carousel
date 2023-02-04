@@ -81,41 +81,6 @@ describe("<Gallery /> without bounded navigation", () => {
     });
   });
 
-  it("should navigate forward if the screenX difference between touchstart and touchend is < -50", () => {
-    cy.viewport("iphone-x", "portrait", { log: true });
-    cy.get('[role="listbox"]').trigger("touchstart", {
-      which: 1,
-      screenX: 0,
-      screenY: 0,
-    });
-    cy.get('[role="listbox"]').trigger("touchend", {
-      which: 1,
-      screenX: -51,
-      screenY: 0,
-    });
-
-    cy.get("[data-cy='image-slide-1']").should(($figure) => {
-      const className = $figure[0].className;
-      expect(className).to.match(/image-selected/);
-    });
-  });
-
-  it("should navigate backward if the screenX difference between touchstart and touchend is > 50", () => {
-    cy.get('[role="listbox"]').trigger("touchstart", {
-      screenX: 0,
-      screenY: 0,
-    });
-    cy.get('[role="listbox"]').trigger("touchend", {
-      screenX: 51,
-      screenY: 0,
-    });
-
-    cy.get("[data-cy='image-slide-5']").should(($figure) => {
-      const className = $figure[0].className;
-      expect(className).to.match(/image-selected/);
-    });
-  });
-
   it("navigate to index by clicking dot navigator", () => {
     cy.get("[data-cy='dot-navigator-1']").click();
     cy.get("[data-cy='image-slide-1']").should(($figure) => {

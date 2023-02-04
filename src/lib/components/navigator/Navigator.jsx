@@ -9,24 +9,23 @@ import { base } from "styles/navigator.module.css";
 import { isEmptyObject } from "helpers/isEmptyObject";
 
 export const Navigator = ({
-  navigationType: type,
-  navigationPosition: position,
-  navigationWidth: width,
-  navigationSideMargin: margin,
-  navigationArrows,
+  navigation = {},
+  arrows = {},
   onNavigate,
   imagesLength,
   currentIndex,
   galleryMode,
   ...props
 }) => {
-  const { arrowSize, areArrowsSet, ...arrowProps } = navigationArrows;
-  const widthProp = `calc(${width} - ${margin}px)`;
+  const { type, position, width, sideMargin } = navigation;
+  const { size, areSet, ...arrowProps } = arrows;
 
-  const { style: navPosition } = useNavPosition({ size: arrowSize, position });
+  const widthProp = `calc(${width} - ${sideMargin}px)`;
+
+  const { style: navPosition } = useNavPosition({ size, position });
   const { style: navType } = useNavType({ width: widthProp, type });
 
-  if (!areArrowsSet) return null;
+  if (!areSet) return null;
 
   const isLastSlide = imagesLength - 1 === currentIndex;
   const isFirstSlide = currentIndex === 0;
@@ -41,7 +40,7 @@ export const Navigator = ({
       <Arrow
         {...arrowProps}
         data-cy="arrow-left"
-        arrowSize={arrowSize}
+        size={size}
         disabled={galleryMode === GalleryMode.BOUNDED && isFirstSlide}
         direction="left"
         onClick={() => onNavigate({ action: CarouselAction.PREV })}
@@ -49,7 +48,7 @@ export const Navigator = ({
       <Arrow
         {...arrowProps}
         data-cy="arrow-right"
-        arrowSize={arrowSize}
+        size={size}
         disabled={galleryMode === GalleryMode.BOUNDED && isLastSlide}
         direction="right"
         onClick={() => onNavigate({ action: CarouselAction.NEXT })}

@@ -1,10 +1,127 @@
 // Vitest Snapshot v1
 
-exports[`Navigator > does not render if \`navigationArrows.areArrowSet\` is equal to \`false\` 1`] = `null`;
+exports[`Navigator > does not render if \`arrows.areSet\` is equal to \`false\` 1`] = `null`;
 
 exports[`Navigator > render correctly and have the function \`onClick\` attached to first child \`Arrow\` component 1`] = `[Function]`;
 
 exports[`Navigator > render correctly and have the function \`onClick\` attached to second child \`Arrow\` component 1`] = `[Function]`;
+
+exports[`Navigator > render if \`arrows.areSet\` is equal to \`true\` and \`arrows.icon\` is defined 1`] = `
+<div
+  role="group"
+>
+  <button
+    data-cy="arrow-left"
+    disabled={false}
+    onClick={[Function]}
+    style={
+      {
+        "transform": "rotate(180deg)",
+      }
+    }
+  >
+    <svg
+      height="1em"
+      viewBox="0 0 24 24"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <polygon
+        points="7.293 4.707 14.586 12 7.293 19.293 8.707 20.707 17.414 12 8.707 3.293 7.293 4.707"
+      />
+    </svg>
+  </button>
+  <button
+    data-cy="arrow-right"
+    disabled={false}
+    onClick={[Function]}
+    style={
+      {
+        "transform": "rotate(0deg)",
+      }
+    }
+  >
+    <svg
+      height="1em"
+      viewBox="0 0 24 24"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <polygon
+        points="7.293 4.707 14.586 12 7.293 19.293 8.707 20.707 17.414 12 8.707 3.293 7.293 4.707"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Navigator > render if \`arrows.areSet\` is equal to \`true\`, \`arrows.icon\` and all other props are defined 1`] = `
+<div
+  role="group"
+  style={
+    {
+      "bottom": 0,
+      "top": 0,
+      "width": "calc(100% - 14px)",
+    }
+  }
+>
+  <button
+    data-cy="arrow-left"
+    disabled={false}
+    onClick={[Function]}
+    style={
+      {
+        "background": "#000000",
+        "borderRadius": "16px",
+        "fontSize": "24px",
+        "height": "12px",
+        "transform": "rotate(180deg)",
+        "width": "12px",
+      }
+    }
+  >
+    <svg
+      fill="#ffffff"
+      height="1em"
+      viewBox="0 0 24 24"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <polygon
+        points="7.293 4.707 14.586 12 7.293 19.293 8.707 20.707 17.414 12 8.707 3.293 7.293 4.707"
+      />
+    </svg>
+  </button>
+  <button
+    data-cy="arrow-right"
+    disabled={false}
+    onClick={[Function]}
+    style={
+      {
+        "background": "#000000",
+        "borderRadius": "16px",
+        "fontSize": "24px",
+        "height": "12px",
+        "transform": "rotate(0deg)",
+        "width": "12px",
+      }
+    }
+  >
+    <svg
+      fill="#ffffff"
+      height="1em"
+      viewBox="0 0 24 24"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <polygon
+        points="7.293 4.707 14.586 12 7.293 19.293 8.707 20.707 17.414 12 8.707 3.293 7.293 4.707"
+      />
+    </svg>
+  </button>
+</div>
+`;
 
 exports[`Navigator > render if \`galleryMode\` is equal to \`GalleryMode.BOUNDED\` and \`currentIndex\` === \`0\`, left button should be disabled 1`] = `
 <div
@@ -99,123 +216,6 @@ exports[`Navigator > render if \`galleryMode\` is equal to \`GalleryMode.BOUNDED
     }
   >
     <svg
-      height="1em"
-      viewBox="0 0 24 24"
-      width="1em"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <polygon
-        points="7.293 4.707 14.586 12 7.293 19.293 8.707 20.707 17.414 12 8.707 3.293 7.293 4.707"
-      />
-    </svg>
-  </button>
-</div>
-`;
-
-exports[`Navigator > render if \`navigationArrows.areArrowSet\` is equal to \`true\` and \`navigationArrows.arrowIcon\` is defined 1`] = `
-<div
-  role="group"
->
-  <button
-    data-cy="arrow-left"
-    disabled={false}
-    onClick={[Function]}
-    style={
-      {
-        "transform": "rotate(180deg)",
-      }
-    }
-  >
-    <svg
-      height="1em"
-      viewBox="0 0 24 24"
-      width="1em"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <polygon
-        points="7.293 4.707 14.586 12 7.293 19.293 8.707 20.707 17.414 12 8.707 3.293 7.293 4.707"
-      />
-    </svg>
-  </button>
-  <button
-    data-cy="arrow-right"
-    disabled={false}
-    onClick={[Function]}
-    style={
-      {
-        "transform": "rotate(0deg)",
-      }
-    }
-  >
-    <svg
-      height="1em"
-      viewBox="0 0 24 24"
-      width="1em"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <polygon
-        points="7.293 4.707 14.586 12 7.293 19.293 8.707 20.707 17.414 12 8.707 3.293 7.293 4.707"
-      />
-    </svg>
-  </button>
-</div>
-`;
-
-exports[`Navigator > render if \`navigationArrows.areArrowSet\` is equal to \`true\`, \`navigationArrows.arrowIcon\` and all other props are defined 1`] = `
-<div
-  role="group"
-  style={
-    {
-      "bottom": 0,
-      "top": 0,
-      "width": "calc(100% - 14px)",
-    }
-  }
->
-  <button
-    data-cy="arrow-left"
-    disabled={false}
-    onClick={[Function]}
-    style={
-      {
-        "background": "#000000",
-        "borderRadius": "16px",
-        "fontSize": "24px",
-        "height": "12px",
-        "transform": "rotate(180deg)",
-        "width": "12px",
-      }
-    }
-  >
-    <svg
-      fill="#ffffff"
-      height="1em"
-      viewBox="0 0 24 24"
-      width="1em"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <polygon
-        points="7.293 4.707 14.586 12 7.293 19.293 8.707 20.707 17.414 12 8.707 3.293 7.293 4.707"
-      />
-    </svg>
-  </button>
-  <button
-    data-cy="arrow-right"
-    disabled={false}
-    onClick={[Function]}
-    style={
-      {
-        "background": "#000000",
-        "borderRadius": "16px",
-        "fontSize": "24px",
-        "height": "12px",
-        "transform": "rotate(0deg)",
-        "width": "12px",
-      }
-    }
-  >
-    <svg
-      fill="#ffffff"
       height="1em"
       viewBox="0 0 24 24"
       width="1em"

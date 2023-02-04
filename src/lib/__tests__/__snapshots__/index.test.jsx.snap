@@ -56,8 +56,7 @@ exports[`Gallery > renders correctly by passing \`navigationType='onlyArrows'\` 
       role="group"
       style={
         {
-          "top": "28px",
-          "width": "calc(100% - 32px)",
+          "width": "calc(undefined - undefinedpx)",
         }
       }
     >

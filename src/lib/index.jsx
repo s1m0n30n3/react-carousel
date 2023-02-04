@@ -32,25 +32,27 @@ export const Gallery = ({
   imageBehavior = ImageBehavior.CONTAINED,
   blur = true,
   blurAmount = 20,
-  navigationType = NavigationType.ONLY_ARROWS,
-  navigationPosition = NavigationPosition.TOP,
-  navigationWidth = "100%",
-  navigationSideMargin = 32,
-  navigationArrows = {
-    areArrowsSet: true,
-    arrowIcon: Arrow,
-    arrowIconSize: 24,
-    arrowColor: "#ffffff",
-    arrowBackground: "#000000",
-    arrowSize: 32,
-    arrowRounding: 16,
+  navigation = {
+    type: NavigationType.ONLY_ARROWS,
+    position: NavigationPosition.TOP,
+    width: "100%",
+    sideMargin: 32,
   },
-  dotsNavigation = {
-    areDotsSet: true,
-    dotColor: "#ffffff",
-    dotSize: 12,
-    dotRadius: 6,
-    dotSpacing: 3,
+  arrows = {
+    areSet: true,
+    size: 32,
+    color: "#ffffff",
+    background: "#000000",
+    radius: 16,
+    icon: Arrow,
+    iconSize: 24,
+  },
+  dots = {
+    areSet: true,
+    color: "#ffffff",
+    size: 12,
+    radius: 6,
+    spacing: 3,
     position: NavigationPosition.BOTTOM,
   },
   images = [],
@@ -79,17 +81,17 @@ export const Gallery = ({
 
   const areArrowsVisible =
     [NavigationType.ARROWS_AND_DOTS, NavigationType.ONLY_ARROWS].includes(
-      navigationType
+      navigation.type
     ) &&
-    navigationType !== NavigationType.NONE &&
-    navigationArrows.areArrowsSet;
+    navigation.type !== NavigationType.NONE &&
+    arrows.areSet;
 
   const areDotsVisible =
     [NavigationType.ARROWS_AND_DOTS, NavigationType.ONLY_DOTS].includes(
-      navigationType
+      navigation.type
     ) &&
-    navigationType !== NavigationType.NONE &&
-    dotsNavigation.areDotsSet;
+    navigation.type !== NavigationType.NONE &&
+    dots.areSet;
 
   return (
     <Root style={{ height: rootHeight, ...styleProps }} ref={galleryRef}>
@@ -149,20 +151,17 @@ export const Gallery = ({
         </CarouselMask>
         {areArrowsVisible && (
           <Navigator
+            arrows={arrows}
+            navigation={navigation}
             galleryMode={mode}
             imagesLength={imagesLength}
             currentIndex={galleryIndex}
-            navigationType={navigationType}
-            navigationPosition={navigationPosition}
-            navigationWidth={navigationWidth}
-            navigationSideMargin={navigationSideMargin}
-            navigationArrows={navigationArrows}
             onNavigate={handleNavigation}
           />
         )}
         {areDotsVisible && (
           <DotNavigator
-            dotsNavigation={dotsNavigation}
+            dots={dots}
             imagesLength={memoImages.length}
             setGalleryIndex={setGalleryIndex}
             currentIndex={galleryIndex}

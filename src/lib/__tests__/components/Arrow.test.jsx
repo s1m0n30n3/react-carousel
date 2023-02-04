@@ -8,7 +8,7 @@ import { Arrow } from "components/arrow";
 
 describe("Arrow", () => {
   test("renders correctly by passing `arrowIcon` required prop", () => {
-    const component = renderer.create(<Arrow arrowIcon={ArrowIcon} />);
+    const component = renderer.create(<Arrow icon={ArrowIcon} />);
 
     const tree = component.toJSON();
 
@@ -18,12 +18,12 @@ describe("Arrow", () => {
     const component = renderer.create(
       <Arrow
         direction="left"
-        arrowBackground="#ffffff"
-        arrowIcon={ArrowIcon}
-        arrowIconSize={24}
-        arrowSize={32}
-        arrowRounding={16}
-        arrowColor="#000000"
+        background="#ffffff"
+        icon={ArrowIcon}
+        iconSize={24}
+        size={32}
+        radius={16}
+        color="#000000"
       />
     );
 

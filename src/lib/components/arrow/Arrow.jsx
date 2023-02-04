@@ -7,12 +7,12 @@ import { base } from "styles/arrow.module.css";
 
 export const Arrow = ({
   direction,
-  arrowIcon: Icon,
-  arrowIconSize: iconSize,
-  arrowColor: color,
-  arrowBackground: background,
-  arrowSize: size,
-  arrowRounding: radius,
+  icon: Icon,
+  iconSize,
+  color,
+  background,
+  size,
+  radius,
   ...props
 }) => {
   const buttonStyles = useArrowStyles({

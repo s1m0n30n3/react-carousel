@@ -18,7 +18,11 @@ window.ResizeObserver = ResizeObserver;
 describe("Gallery", () => {
   test("renders correctly by passing `navigationType='none'`", () => {
     const component = renderer.create(
-      <Gallery navigationType={NavigationType.NONE} />
+      <Gallery
+        navigation={{
+          type: NavigationType.NONE,
+        }}
+      />
     );
 
     const tree = component.toJSON();
@@ -27,7 +31,11 @@ describe("Gallery", () => {
 
   test("renders correctly by passing `navigationType='onlyArrows'`", () => {
     const component = renderer.create(
-      <Gallery navigationType={NavigationType.ONLY_ARROWS} />
+      <Gallery
+        navigation={{
+          type: NavigationType.ONLY_ARROWS,
+        }}
+      />
     );
 
     const tree = component.toJSON();
@@ -36,7 +44,11 @@ describe("Gallery", () => {
 
   test("renders correctly by passing `navigationType='onlyArrows'`", () => {
     const component = renderer.create(
-      <Gallery navigationType={NavigationType.ONLY_DOTS} />
+      <Gallery
+        navigation={{
+          type: NavigationType.ONLY_DOTS,
+        }}
+      />
     );
 
     const tree = component.toJSON();

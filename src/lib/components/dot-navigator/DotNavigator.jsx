@@ -8,17 +8,16 @@ import { base } from "styles/dot-navigator.module.css";
 
 export const DotNavigator = ({
   onClick,
-  dotsNavigation,
+  dots = {},
   imagesLength,
   setGalleryIndex,
   currentIndex,
   ...props
 }) => {
-  const { areDotsSet, position, dotSize, dotColor, dotRadius, dotSpacing } =
-    dotsNavigation;
-  const navPosition = useNavPosition({ size: dotSize, position });
+  const { areSet, position, size, color, radius, spacing } = dots;
+  const navPosition = useNavPosition({ size, position });
 
-  if (!areDotsSet) return null;
+  if (!areSet) return null;
 
   const dotsAmount = [...Array(imagesLength).keys()];
 
@@ -29,10 +28,10 @@ export const DotNavigator = ({
           <Dot
             key={index}
             data-cy={`dot-navigator-${index}`}
-            color={dotColor}
-            size={dotSize}
-            radius={dotRadius}
-            margin={dotSpacing}
+            color={color}
+            size={size}
+            radius={radius}
+            margin={spacing}
             isSelected={currentIndex === index}
             onClick={() => setGalleryIndex(index)}
           />
