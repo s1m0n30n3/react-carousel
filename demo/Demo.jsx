@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Gallery } from "../lib";
+import { Gallery } from "../src/index";
 
 import { ReactComponent as Arrow } from "../assets/icons/chevron-right.svg";
 
@@ -12,7 +12,10 @@ import slide5 from "../assets/images/slide-5.jpg";
 import slide6 from "../assets/images/slide-6.jpg";
 
 const images = [
-  { src: slide1, alt: "Mac" },
+  {
+    src: slide1,
+    alt: "Mac",
+  },
   { src: slide2, alt: "Mac" },
   { src: slide3, alt: "Mac" },
   { src: slide4, alt: "Mac" },

@@ -8,6 +8,7 @@ import { GalleryWrapper } from "components/gallery-wrapper";
 import { Image } from "components/image";
 import { Navigator } from "components/navigator";
 import { DotNavigator } from "components/dot-navigator";
+import { LazyImage } from "components/lazy-image";
 
 import { useGallery, useScreenRatio } from "hooks";
 import { galleryPropTypes } from "proptypes";
@@ -22,6 +23,7 @@ import {
   NavigationPosition,
 } from "constants";
 
+import { ReactComponent as LoadingSpinner } from "assets/icons/spinner.svg";
 import { ReactComponent as Arrow } from "assets/icons/chevron-right.svg";
 
 export const Gallery = ({
@@ -32,6 +34,10 @@ export const Gallery = ({
   imageBehavior = ImageBehavior.CONTAINED,
   blur = true,
   blurAmount = 20,
+  loading = {
+    icon: LoadingSpinner,
+    size: 48,
+  },
   navigation = {
     type: NavigationType.ONLY_ARROWS,
     position: NavigationPosition.TOP,
@@ -143,7 +149,12 @@ export const Gallery = ({
                   effectSpeed={effectSpeed}
                   imageBlur={{ blur, blurAmount }}
                 >
-                  <img src={src} alt={alt} draggable={false} />
+                  <LazyImage
+                    loading={loading}
+                    src={src}
+                    alt={alt}
+                    draggable={false}
+                  />
                 </Image>
               );
             })}

@@ -1,18 +1,20 @@
 {
-  "name": "react-image-carousel",
-  "version": "0.0.0",
+  "name": "react-deadly-simple-carousel",
+  "version": "0.1.0",
   "type": "module",
   "license": "MIT",
+  "author": "Simone Pizzuti <simone.piz1984@gmail.com>",
+  "homepage": "https://github.com/s1m0n30n3/react-carousel#readme",
   "files": [
     "dist",
     "README.md"
   ],
-  "main": "./dist/react-image-carousel.umd.js",
-  "module": "./dist/react-image-carousel.es.js",
+  "main": "./dist/react-deadly-simple-carousel.umd.js",
+  "module": "./dist/react-deadly-simple-carousel.es.js",
   "exports": {
     ".": {
-      "import": "./dist/react-image-carousel.es.js",
-      "require": "./dist/react-image-carousel.umd.js"
+      "import": "./dist/react-deadly-simple-carousel.es.js",
+      "require": "./dist/react-deadly-simple-carousel.umd.js"
     }
   },
   "scripts": {
@@ -21,7 +23,7 @@
     "test": "vitest run",
     "watch": "vitest",
     "coverage": "vitest run --coverage",
-    "cy": "./node_modules/.bin/cypress open"
+    "cy": "cypress open"
   },
   "browserslist": {
     "production": [
@@ -71,5 +73,20 @@
     "react-test-renderer": "^18.2.0",
     "vite": "^4.0.0",
     "vitest": "^0.28.3"
+  },
+  "description": "Carousel Component to display images in sequence, supports touch events, click events, arrows navigation, dot navigation",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s1m0n30n3/react-carousel.git"
+  },
+  "keywords": [
+    "react-carousel",
+    "react",
+    "carousel",
+    "image",
+    "gallery"
+  ],
+  "bugs": {
+    "url": "https://github.com/s1m0n30n3/react-carousel/issues"
   }
 }
