@@ -1,4 +1,4 @@
-.base {
+.arrow--base {
     appearance: none;
     border: none;
     background-color: none;
@@ -8,8 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.base:disabled {
-    opacity: 0.5;
+    &:disabled {
+        opacity: 0.5;
+    }
 }

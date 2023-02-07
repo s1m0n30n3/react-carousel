@@ -5,7 +5,6 @@ import { navigatorPropTypes } from "proptypes";
 import { CarouselAction, GalleryMode } from "constants";
 import { useNavPosition, useNavType } from "hooks";
 
-import { base } from "styles/navigator.module.css";
 import { isEmptyObject } from "helpers/isEmptyObject";
 
 export const Navigator = ({
@@ -36,7 +35,7 @@ export const Navigator = ({
     : { style: mergedProps };
 
   return (
-    <div {...props} role="group" className={base} {...style}>
+    <div {...props} role="group" className="navigator--base" {...style}>
       <Arrow
         {...arrowProps}
         data-cy="arrow-left"

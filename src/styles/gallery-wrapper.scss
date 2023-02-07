@@ -1,13 +1,14 @@
-.base {
+.gallery-wrapper--base {
     height: inherit;
     transition-timing-function: ease-in-out;
     display: flex;
 }
 
-.slide {
+.gallery-wrapper--slide-effect {
     transition-property: transform;
 }
-.fade {
+
+.gallery-wrapper--fade-effect {
     width: 100%;
     transition-property: opacity;
     position: relative;

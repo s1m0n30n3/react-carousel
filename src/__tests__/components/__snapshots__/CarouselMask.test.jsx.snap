@@ -1,3 +1,7 @@
 // Vitest Snapshot v1
 
-exports[`CarouselMask > component renders correctly without props 1`] = `<div />`;
+exports[`CarouselMask > component renders correctly without props 1`] = `
+<div
+  className="carousel-mask--base"
+/>
+`;

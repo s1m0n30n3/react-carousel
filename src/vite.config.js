@@ -5,12 +5,17 @@ import path from "path";
 
 export default defineConfig({
   build: {
+    manifest: true,
+    minify: true,
+    reportCompressedSize: true,
     lib: {
       entry: path.resolve(__dirname, "./index.jsx"),
-      name: "Image Gallery React",
-      fileName: (format) => `image-gallery.${format}.js`,
+      name: "Deadly Simple Image Gallery",
+      fileName: (format) => `deadly-simple-gallery.${format}.js`,
+      formats: ["es", "cjs"],
     },
     rollupOptions: {
+      plugins: [],
       external: ["react", "react-dom"],
       output: {
         globals: {
@@ -18,6 +23,9 @@ export default defineConfig({
         },
       },
     },
+  },
+  server: {
+    port: 3000,
   },
   test: {
     globals: false,

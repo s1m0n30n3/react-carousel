@@ -2,6 +2,7 @@
 
 exports[`BlurEffect > renders correctly without props 1`] = `
 <div
+  className="blur--base"
   style={
     {
       "backgroundImage": "initial",

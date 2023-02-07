@@ -1,7 +1,9 @@
 // Vitest Snapshot v1
 
 exports[`Arrow > renders correctly by passing \`arrowIcon\` required prop 1`] = `
-<button>
+<button
+  className="arrow--base"
+>
   <svg
     height="1em"
     viewBox="0 0 24 24"
@@ -17,6 +19,7 @@ exports[`Arrow > renders correctly by passing \`arrowIcon\` required prop 1`] = 
 
 exports[`Arrow > renders correctly by passing \`arrowIcon\` required prop and other props 1`] = `
 <button
+  className="arrow--base"
   style={
     {
       "background": "#ffffff",

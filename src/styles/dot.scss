@@ -1,4 +1,4 @@
-.base {
+.dot--base {
     appearance: none;
     border: none;
     background-color: none;
@@ -9,6 +9,6 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.4);
 }
 
-.selected {
+.dot--selected {
     opacity: 1;
 }

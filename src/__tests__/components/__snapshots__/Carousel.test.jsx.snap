@@ -1,3 +1,7 @@
 // Vitest Snapshot v1
 
-exports[`Carousel > renders correctly without props 1`] = `<div />`;
+exports[`Carousel > renders correctly without props 1`] = `
+<div
+  className="carousel--base"
+/>
+`;

@@ -16,11 +16,6 @@ const images = [
     src: slide1,
     alt: "Mac",
   },
-  { src: slide2, alt: "Mac" },
-  { src: slide3, alt: "Mac" },
-  { src: slide4, alt: "Mac" },
-  { src: slide5, alt: "Mac" },
-  { src: slide6, alt: "Mac" },
 ];
 
 export const Demo = () => {

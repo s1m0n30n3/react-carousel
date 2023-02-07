@@ -5,8 +5,6 @@ import { TransitionEffect } from "constants";
 import { useGalleryTransition } from "hooks";
 import { galleryWrapperPropTypes } from "proptypes";
 
-import { base, fade, slide } from "styles/gallery-wrapper.module.css";
-
 export const GalleryWrapper = ({
   imagesLength,
   currentIndex,
@@ -28,9 +26,9 @@ export const GalleryWrapper = ({
       {...props}
       role="listbox"
       className={classNames([
-        base,
-        isFadeEffect && fade,
-        isSlideEffect && slide,
+        "gallery-wrapper--base",
+        isFadeEffect && "gallery-wrapper--fade-effect",
+        isSlideEffect && "gallery-wrapper--slide-effect",
       ])}
       style={effects[effect]}
     />

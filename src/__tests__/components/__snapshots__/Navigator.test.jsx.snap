@@ -8,9 +8,11 @@ exports[`Navigator > render correctly and have the function \`onClick\` attached
 
 exports[`Navigator > render if \`arrows.areSet\` is equal to \`true\` and \`arrows.icon\` is defined 1`] = `
 <div
+  className="navigator--base"
   role="group"
 >
   <button
+    className="arrow--base"
     data-cy="arrow-left"
     disabled={false}
     onClick={[Function]}
@@ -32,6 +34,7 @@ exports[`Navigator > render if \`arrows.areSet\` is equal to \`true\` and \`arro
     </svg>
   </button>
   <button
+    className="arrow--base"
     data-cy="arrow-right"
     disabled={false}
     onClick={[Function]}
@@ -57,6 +60,7 @@ exports[`Navigator > render if \`arrows.areSet\` is equal to \`true\` and \`arro
 
 exports[`Navigator > render if \`arrows.areSet\` is equal to \`true\`, \`arrows.icon\` and all other props are defined 1`] = `
 <div
+  className="navigator--base"
   role="group"
   style={
     {
@@ -67,6 +71,7 @@ exports[`Navigator > render if \`arrows.areSet\` is equal to \`true\`, \`arrows.
   }
 >
   <button
+    className="arrow--base"
     data-cy="arrow-left"
     disabled={false}
     onClick={[Function]}
@@ -94,6 +99,7 @@ exports[`Navigator > render if \`arrows.areSet\` is equal to \`true\`, \`arrows.
     </svg>
   </button>
   <button
+    className="arrow--base"
     data-cy="arrow-right"
     disabled={false}
     onClick={[Function]}
@@ -125,9 +131,11 @@ exports[`Navigator > render if \`arrows.areSet\` is equal to \`true\`, \`arrows.
 
 exports[`Navigator > render if \`galleryMode\` is equal to \`GalleryMode.BOUNDED\` and \`currentIndex\` === \`0\`, left button should be disabled 1`] = `
 <div
+  className="navigator--base"
   role="group"
 >
   <button
+    className="arrow--base"
     data-cy="arrow-left"
     disabled={true}
     onClick={[Function]}
@@ -151,6 +159,7 @@ exports[`Navigator > render if \`galleryMode\` is equal to \`GalleryMode.BOUNDED
     </svg>
   </button>
   <button
+    className="arrow--base"
     data-cy="arrow-right"
     disabled={false}
     onClick={[Function]}
@@ -178,9 +187,11 @@ exports[`Navigator > render if \`galleryMode\` is equal to \`GalleryMode.BOUNDED
 
 exports[`Navigator > render if \`galleryMode\` is equal to \`GalleryMode.BOUNDED\` and \`imageLength - 1\` === \`currentIndex\`, right button should be disabled 1`] = `
 <div
+  className="navigator--base"
   role="group"
 >
   <button
+    className="arrow--base"
     data-cy="arrow-left"
     disabled={false}
     onClick={[Function]}
@@ -204,6 +215,7 @@ exports[`Navigator > render if \`galleryMode\` is equal to \`GalleryMode.BOUNDED
     </svg>
   </button>
   <button
+    className="arrow--base"
     data-cy="arrow-right"
     disabled={true}
     onClick={[Function]}

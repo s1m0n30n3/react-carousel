@@ -4,8 +4,6 @@ import { Dot } from "components/dot";
 import { useNavPosition } from "hooks";
 import { dotNavigatorpropTypes } from "proptypes";
 
-import { base } from "styles/dot-navigator.module.css";
-
 export const DotNavigator = ({
   onClick,
   dots = {},
@@ -22,7 +20,12 @@ export const DotNavigator = ({
   const dotsAmount = [...Array(imagesLength).keys()];
 
   return (
-    <div {...props} className={base} onClick={onClick} {...navPosition}>
+    <div
+      {...props}
+      className="dot-navigator--base"
+      onClick={onClick}
+      {...navPosition}
+    >
       {dotsAmount.map((index) => {
         return (
           <Dot

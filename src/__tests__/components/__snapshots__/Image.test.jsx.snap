@@ -2,10 +2,11 @@
 
 exports[`Image > renders correctly if \`imageBehaviour\` is \`full\` and \`effect\` is \`inOutSlide\` 1`] = `
 <div
+  className="wrapper--slide-effect"
   role="listitem"
 >
   <figure
-    className="image-selected"
+    className="image--base image--full-format image--inOutSlide-effect image--selected"
     data-cy="image-slide-1"
     style={
       {
@@ -19,9 +20,11 @@ exports[`Image > renders correctly if \`imageBehaviour\` is \`full\` and \`effec
 
 exports[`Image > renders correctly if \`imageBlur.blur\` is \`true\` and images are set 1`] = `
 <div
+  className="wrapper--slide-effect"
   role="listitem"
 >
   <div
+    className="blur--base"
     style={
       {
         "backgroundImage": "initial",
@@ -35,7 +38,7 @@ exports[`Image > renders correctly if \`imageBlur.blur\` is \`true\` and images 
     }
   />
   <figure
-    className="image-selected"
+    className="image--base image--selected"
     data-cy="image-slide-undefined"
     style={{}}
   />
@@ -44,9 +47,11 @@ exports[`Image > renders correctly if \`imageBlur.blur\` is \`true\` and images 
 
 exports[`Image > renders correctly if \`imageBlur.blur\` is \`true\` and images are set along with other props 1`] = `
 <div
+  className="wrapper--fade-effect"
   role="listitem"
 >
   <div
+    className="blur--base"
     style={
       {
         "backgroundImage": "url(b.png)",
@@ -62,7 +67,7 @@ exports[`Image > renders correctly if \`imageBlur.blur\` is \`true\` and images 
     }
   />
   <figure
-    className="image-selected"
+    className="image--base image--fade-effect image--contained-format image--selected"
     data-cy="image-slide-1"
     style={
       {
@@ -76,10 +81,11 @@ exports[`Image > renders correctly if \`imageBlur.blur\` is \`true\` and images 
 
 exports[`Image > renders correctly without other props, if \`imageBlur.blur\` is \`false\` 1`] = `
 <div
+  className="wrapper--slide-effect"
   role="listitem"
 >
   <figure
-    className="image-selected"
+    className="image--base image--selected"
     data-cy="image-slide-undefined"
     style={{}}
   />

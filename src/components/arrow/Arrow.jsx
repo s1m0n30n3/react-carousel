@@ -3,8 +3,6 @@ import React from "react";
 import { useArrowStyles } from "hooks";
 import { arrowPropTypes } from "proptypes";
 
-import { base } from "styles/arrow.module.css";
-
 export const Arrow = ({
   direction,
   icon: Icon,
@@ -24,7 +22,7 @@ export const Arrow = ({
   });
 
   return (
-    <button {...props} className={base} {...buttonStyles}>
+    <button {...props} className="arrow--base" {...buttonStyles}>
       <Icon fill={color} />
     </button>
   );

@@ -5,16 +5,6 @@ import { ImageBehavior, TransitionEffect } from "constants";
 import { imageProptypes } from "proptypes/index";
 import { useImageTransition } from "hooks";
 
-import {
-  wrapperFade,
-  wrapperSlide,
-  base,
-  fade,
-  full,
-  contained,
-  inOutSlide,
-} from "styles/image.module.css";
-
 import { BlurEffect } from "./BlurEffect";
 
 export const Image = ({
@@ -36,7 +26,12 @@ export const Image = ({
   const effects = useImageTransition({ isCurrentSlide, effectSpeed });
 
   return (
-    <div role="listitem" className={isFadeEffect ? wrapperFade : wrapperSlide}>
+    <div
+      role="listitem"
+      className={
+        isFadeEffect ? "wrapper--fade-effect" : "wrapper--slide-effect"
+      }
+    >
       {!isFullWidth && !!imageBlur.blur && (
         <BlurEffect
           effects={effects[effect]}
@@ -48,12 +43,12 @@ export const Image = ({
         {...props}
         data-cy={`image-slide-${index}`}
         className={classNames([
-          base,
-          isFadeEffect && fade,
-          isFullWidth && full,
-          isContained && contained,
-          isInOutSlideEffect && inOutSlide,
-          isCurrentSlide && "image-selected",
+          "image--base",
+          isFadeEffect && "image--fade-effect",
+          isFullWidth && "image--full-format",
+          isContained && "image--contained-format",
+          isInOutSlideEffect && "image--inOutSlide-effect",
+          isCurrentSlide && "image--selected",
         ])}
         style={{ ...effects[effect] }}
       />

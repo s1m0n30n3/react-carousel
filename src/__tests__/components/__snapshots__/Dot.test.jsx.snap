@@ -2,7 +2,7 @@
 
 exports[`Dot > renders all props 1`] = `
 <button
-  className=""
+  className="dot--base dot--selected"
   style={
     {
       "backgroundColor": "#ffffff",
@@ -18,6 +18,6 @@ exports[`Dot > renders all props 1`] = `
 
 exports[`Dot > renders correctly without props 1`] = `
 <button
-  className=""
+  className="dot--base"
 />
 `;

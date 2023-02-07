@@ -1,7 +1,7 @@
 import React from "react";
 
-import { base } from "styles/carousel.module.css";
-
-export const Carousel = (props) => <div {...props} className={base} />;
+export const Carousel = (props) => (
+  <div {...props} className="carousel--base" />
+);
 
 Carousel.displayName = "Gallery.Carousel";

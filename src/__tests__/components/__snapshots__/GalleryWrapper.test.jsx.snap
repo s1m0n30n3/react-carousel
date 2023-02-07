@@ -2,7 +2,7 @@
 
 exports[`GalleryWrapper > renders correctly if \`effect\` is \`slide\` 1`] = `
 <div
-  className=""
+  className="gallery-wrapper--base gallery-wrapper--slide-effect"
   role="listbox"
   style={
     {
@@ -16,14 +16,14 @@ exports[`GalleryWrapper > renders correctly if \`effect\` is \`slide\` 1`] = `
 
 exports[`GalleryWrapper > renders correctly with props 1`] = `
 <div
-  className=""
+  className="gallery-wrapper--base gallery-wrapper--fade-effect"
   role="listbox"
 />
 `;
 
 exports[`GalleryWrapper > renders correctly without props 1`] = `
 <div
-  className=""
+  className="gallery-wrapper--base"
   role="listbox"
 />
 `;

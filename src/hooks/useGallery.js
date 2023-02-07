@@ -19,6 +19,8 @@ export const useGallery = ({ imagesLength, mode }) => {
         const increment = prev + 1;
         const decrement = prev - 1;
 
+        if (imagesLength === 1) return prev;
+
         if (prev > 0 && prev < carouselLength && !!action)
           return isPrev ? decrement : increment;
 

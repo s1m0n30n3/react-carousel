@@ -25,13 +25,14 @@ import {
 
 import { ReactComponent as LoadingSpinner } from "assets/icons/spinner.svg";
 import { ReactComponent as Arrow } from "assets/icons/chevron-right.svg";
+import "styles/index.scss";
 
 export const Gallery = ({
-  effect = TransitionEffect.FADE,
+  effect = TransitionEffect.SLIDE,
   effectSpeed = 400,
   mode = GalleryMode.RETURN,
   ratio = GalleryRatio.R16_10,
-  imageBehavior = ImageBehavior.CONTAINED,
+  imageBehavior = ImageBehavior.FULL,
   blur = true,
   blurAmount = 20,
   loading = {
@@ -39,8 +40,8 @@ export const Gallery = ({
     size: 48,
   },
   navigation = {
-    type: NavigationType.ONLY_ARROWS,
-    position: NavigationPosition.TOP,
+    type: NavigationType.ARROWS_AND_DOTS,
+    position: NavigationPosition.CENTER,
     width: "100%",
     sideMargin: 32,
   },

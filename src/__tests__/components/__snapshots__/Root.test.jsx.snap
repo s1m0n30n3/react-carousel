@@ -2,6 +2,7 @@
 
 exports[`Root > component renders correctly without props 1`] = `
 <div
+  className="root--base"
   role="region"
 />
 `;

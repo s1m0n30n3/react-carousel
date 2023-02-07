@@ -3,9 +3,11 @@
 exports[`DotNavigator > render correctly and have the function \`onClick\` attached to \`Dot\` component 1`] = `[Function]`;
 
 exports[`DotNavigator > render correctly when \`dotsNavigation.areDotsSet\` prop is \`true\` 1`] = `
-<div>
+<div
+  className="dot-navigator--base"
+>
   <button
-    className=""
+    className="dot--base"
     data-cy="dot-navigator-0"
     onClick={[Function]}
   />
@@ -14,6 +16,7 @@ exports[`DotNavigator > render correctly when \`dotsNavigation.areDotsSet\` prop
 
 exports[`DotNavigator > render correctly when \`dotsNavigation.areDotsSet\` prop is \`true\` and other props are defined 1`] = `
 <div
+  className="dot-navigator--base"
   onClick={[Function]}
   style={
     {
@@ -22,7 +25,7 @@ exports[`DotNavigator > render correctly when \`dotsNavigation.areDotsSet\` prop
   }
 >
   <button
-    className=""
+    className="dot--base"
     data-cy="dot-navigator-0"
     onClick={[Function]}
     style={
@@ -37,7 +40,7 @@ exports[`DotNavigator > render correctly when \`dotsNavigation.areDotsSet\` prop
     }
   />
   <button
-    className=""
+    className="dot--base dot--selected"
     data-cy="dot-navigator-1"
     onClick={[Function]}
     style={
@@ -52,7 +55,7 @@ exports[`DotNavigator > render correctly when \`dotsNavigation.areDotsSet\` prop
     }
   />
   <button
-    className=""
+    className="dot--base"
     data-cy="dot-navigator-2"
     onClick={[Function]}
     style={
@@ -67,7 +70,7 @@ exports[`DotNavigator > render correctly when \`dotsNavigation.areDotsSet\` prop
     }
   />
   <button
-    className=""
+    className="dot--base"
     data-cy="dot-navigator-3"
     onClick={[Function]}
     style={
@@ -82,7 +85,7 @@ exports[`DotNavigator > render correctly when \`dotsNavigation.areDotsSet\` prop
     }
   />
   <button
-    className=""
+    className="dot--base"
     data-cy="dot-navigator-4"
     onClick={[Function]}
     style={
@@ -97,7 +100,7 @@ exports[`DotNavigator > render correctly when \`dotsNavigation.areDotsSet\` prop
     }
   />
   <button
-    className=""
+    className="dot--base"
     data-cy="dot-navigator-5"
     onClick={[Function]}
     style={
@@ -112,7 +115,7 @@ exports[`DotNavigator > render correctly when \`dotsNavigation.areDotsSet\` prop
     }
   />
   <button
-    className=""
+    className="dot--base"
     data-cy="dot-navigator-6"
     onClick={[Function]}
     style={
@@ -127,7 +130,7 @@ exports[`DotNavigator > render correctly when \`dotsNavigation.areDotsSet\` prop
     }
   />
   <button
-    className=""
+    className="dot--base"
     data-cy="dot-navigator-7"
     onClick={[Function]}
     style={
