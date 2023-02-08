@@ -2,7 +2,7 @@ import React from "react";
 import renderer, { act } from "react-test-renderer";
 import { describe, expect, test } from "vitest";
 
-import { Gallery } from "..";
+import { Gallery } from "../index";
 
 import { NavigationType } from "constants";
 import { handleOnMouseDrag } from "helpers/handleOnMouseDrag";

@@ -25,12 +25,19 @@ exports[`Gallery > renders correctly by passing \`navigationType='none'\` 1`] = 
       className="carousel-mask--base"
     >
       <div
-        className="gallery-wrapper--base gallery-wrapper--fade-effect"
+        className="gallery-wrapper--base gallery-wrapper--slide-effect"
         onMouseDown={[Function]}
         onMouseUp={[Function]}
         onTouchEnd={[Function]}
         onTouchStart={[Function]}
         role="listbox"
+        style={
+          {
+            "transform": "translateX(-NaN%)",
+            "transitionDuration": "400ms",
+            "width": "0%",
+          }
+        }
       />
     </div>
   </div>
@@ -54,12 +61,19 @@ exports[`Gallery > renders correctly by passing \`navigationType='onlyArrows'\` 
       className="carousel-mask--base"
     >
       <div
-        className="gallery-wrapper--base gallery-wrapper--fade-effect"
+        className="gallery-wrapper--base gallery-wrapper--slide-effect"
         onMouseDown={[Function]}
         onMouseUp={[Function]}
         onTouchEnd={[Function]}
         onTouchStart={[Function]}
         role="listbox"
+        style={
+          {
+            "transform": "translateX(-NaN%)",
+            "transitionDuration": "400ms",
+            "width": "0%",
+          }
+        }
       />
     </div>
     <div
@@ -149,12 +163,19 @@ exports[`Gallery > renders correctly by passing \`navigationType='onlyArrows'\` 
       className="carousel-mask--base"
     >
       <div
-        className="gallery-wrapper--base gallery-wrapper--fade-effect"
+        className="gallery-wrapper--base gallery-wrapper--slide-effect"
         onMouseDown={[Function]}
         onMouseUp={[Function]}
         onTouchEnd={[Function]}
         onTouchStart={[Function]}
         role="listbox"
+        style={
+          {
+            "transform": "translateX(-NaN%)",
+            "transitionDuration": "400ms",
+            "width": "0%",
+          }
+        }
       />
     </div>
     <div

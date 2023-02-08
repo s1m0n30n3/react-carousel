@@ -7,3 +7,4 @@ export * from "./useImageTransition";
 export * from "./useBlurEffect";
 export * from "./useArrowStyles";
 export * from "./useDotStyles";
+export * from "./useLazyLoading";

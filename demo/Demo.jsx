@@ -13,7 +13,7 @@ import slide6 from "../assets/images/slide-6.jpg";
 
 const images = [
   {
-    src: slide1,
+    src: "https://images.unsplash.com/photo-1661956602868-6ae368943878",
     alt: "Mac",
   },
 ];

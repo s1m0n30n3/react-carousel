@@ -35,7 +35,7 @@ export const Gallery = ({
   imageBehavior = ImageBehavior.FULL,
   blur = true,
   blurAmount = 20,
-  loading = {
+  imageLoad = {
     icon: LoadingSpinner,
     size: 48,
   },
@@ -151,7 +151,7 @@ export const Gallery = ({
                   imageBlur={{ blur, blurAmount }}
                 >
                   <LazyImage
-                    loading={loading}
+                    imageLoad={imageLoad}
                     src={src}
                     alt={alt}
                     draggable={false}

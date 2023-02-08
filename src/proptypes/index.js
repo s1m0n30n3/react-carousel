@@ -6,3 +6,4 @@ export * from "./gallery";
 export * from "./galleryWrapper";
 export * from "./image";
 export * from "./navigator";
+export * from "./lazyImage";

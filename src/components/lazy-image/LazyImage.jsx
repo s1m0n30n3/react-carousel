@@ -1,29 +1,21 @@
-import React, { useLayoutEffect, useState } from "react";
-import PropTypes from "prop-types";
+import React, { useLayoutEffect } from "react";
 
-export const LazyImage = ({ src, loading, ...props }) => {
-  const [isLoaded, setIsLoaded] = useState(false);
+import { useLazyLoading } from "hooks";
+import { lazyImagepropTypes } from "proptypes/index";
+
+export const LazyImage = ({ src, imageLoad, ...props }) => {
+  const { icon: Icon, size } = imageLoad;
+  const { onImageLoad, isLoaded } = useLazyLoading({ src });
 
   useLayoutEffect(() => {
     const initialImage = new Image();
-    initialImage.onload = () => {
-      return setIsLoaded(true);
-    };
     initialImage.src = src;
-    return setIsLoaded(false);
-  }, [src]);
+    onImageLoad(initialImage);
+  }, [src, onImageLoad]);
 
-  if (!isLoaded) {
-    return <loading.icon fontSize={loading.size} />;
-  }
-
+  if (!isLoaded) return <Icon fontSize={size} />;
   return <img src={src} {...props} />;
 };
 
-LazyImage.propTypes = {
-  src: PropTypes.string,
-  loading: PropTypes.shape({
-    icon: PropTypes.func,
-    size: PropTypes.number,
-  }),
-};
+LazyImage.propTypes = lazyImagepropTypes;
+LazyImage.displayName = "Gallery.LazyImage";
