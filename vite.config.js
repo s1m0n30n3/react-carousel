@@ -9,7 +9,7 @@ export default defineConfig({
     minify: true,
     reportCompressedSize: true,
     lib: {
-      entry: path.resolve(__dirname, "./demo/index.jsx"),
+      entry: path.resolve(__dirname, "./index.jsx"),
       name: "Deadly Simple Image Gallery - demo",
       fileName: (format) => `deadly-simple-gallery.${format}.js`,
       formats: ["es", "cjs"],
