@@ -4,10 +4,11 @@
   "description": "react carousel demo",
   "main": "index.jsx",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 3010",
     "build": "vite build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "preview": "vite preview --port 8080"
   },
   "repository": {
     "type": "git",

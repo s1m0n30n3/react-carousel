@@ -1,0 +1,11 @@
+{
+  "index.jsx": {
+    "file": "deadly-simple-gallery.cjs.js",
+    "isEntry": true,
+    "src": "index.jsx"
+  },
+  "style.css": {
+    "file": "style.css",
+    "src": "style.css"
+  }
+}
