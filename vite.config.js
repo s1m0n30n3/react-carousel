@@ -16,7 +16,7 @@ export default defineConfig({
     },
     rollupOptions: {
       plugins: [],
-      external: ["react", "react-dom"],
+      external: ["react", "react-dom", "vite-plugin-svgr"],
       output: {
         globals: {
           react: "React",
