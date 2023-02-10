@@ -4,6 +4,7 @@ import svgr from "vite-plugin-svgr";
 import path from "path";
 
 export default defineConfig({
+  base: "/react-carousel/",
   build: {
     manifest: true,
     minify: true,
@@ -23,14 +24,6 @@ export default defineConfig({
         },
       },
     },
-  },
-  server: {
-    port: 3000,
-  },
-  test: {
-    globals: false,
-    environment: "jsdom",
-    includeSource: ["./**/*.{js,ts}"],
   },
   plugins: [react(), svgr()],
   resolve: {
