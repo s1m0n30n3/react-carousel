@@ -1,8 +1,8 @@
-# react-carousel
+## React Deadly Simple Gallery
 
 Carousel Component to display images in sequence, supports touch events, click events, arrows navigation, dot navigation
 
-# Fast usage
+## Fast usage
 
 ```bash
 npm i react-deadly-simple-carousel
@@ -35,10 +35,14 @@ export const YourComponent = () => {
 };
 ```
 
-# Work in progress
+## Demo
+
+Here you can play with the gallery [Gallery Demo](https://s1m0n30n3.github.io/carousel-demo/)
+
+## Work in progress
 
 Complete documentation coming soon. 🥵
 
-# Contacts
+## Contacts
 
 For any request and urgent question contact me here: `simone.piz1984@gmail.com`
